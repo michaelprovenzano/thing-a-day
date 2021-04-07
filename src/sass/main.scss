@@ -1,0 +1,28 @@
+// Simple reset
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 960px;
+}
+
+@media screen and (max-width: 960px) {
+  .container {
+    width: 100%;
+  }
+}
+
+// Imports
+@import './variables';
+
+@import './layout/bootstrap-reboot';
+@import './layout/bootstrap-grid';
+
+@import './typography';
+
+@import './components/navbar';
+@import './components/header';
+@import './components/button';
+@import './components/tag';

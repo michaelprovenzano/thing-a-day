@@ -1,0 +1,26 @@
+@import '../variables';
+
+.btn {
+  padding: 1rem;
+  font-size: 1.2rem;
+  border: none;
+
+  &.btn {
+    &-primary {
+      background-color: $primary-color;
+      color: $white;
+      border: 1px solid $primary-color;
+    }
+
+    &-black {
+      background-color: $black;
+      color: $white;
+      border: 1px solid $black;
+
+      &.active {
+        background-color: $white;
+        color: $black;
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+@import '../variables';
+@import '../mixins/screens';
+
+.header {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  &-title {
+    display: inline-block;
+    margin: 1.8rem auto 1.8rem auto;
+    border-top: 10px solid $black;
+    border-bottom: 10px solid $black;
+
+    @include breakpoint($breakpoint-tablet) {
+      span {
+        display: block;
+      }
+    }
+
+    @include breakpoint($breakpoint-mobile) {
+      font-size: 5rem;
+      border-top: 8px solid $black;
+      border-bottom: 8px solid $black;
+    }
+  }
+
+  &-description {
+    margin: 3.7rem auto 9.7rem auto;
+
+    @include breakpoint($breakpoint-mobile) {
+      margin-bottom: 5rem;
+    }
+  }
+}

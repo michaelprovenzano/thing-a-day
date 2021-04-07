@@ -1,0 +1,22 @@
+@import '../variables';
+@import '../mixins/screens';
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 7rem;
+  margin-bottom: 11.1rem;
+
+  &-content {
+    display: flex;
+    justify-content: flex-end;
+
+    @include breakpoint($breakpoint-mobile) {
+      justify-content: center;
+      a {
+        display: block;
+      }
+    }
+  }
+}
